@@ -1,0 +1,50 @@
+@charset "utf-8";
+// 网站顶部
+#top1{width: 100%;background-color: black;height: 30px;}
+#top1 a{color:white;line-height:30px;}
+#top1 a:hover{color: #e00;}
+.content{width: 1190px;margin: 0 auto;}
+.top1-left a{margin: 0 12px 0;}
+.top1-left .top1-left-welcom{margin-right: 22px;cursor: text}
+.top1-left-sx{border-right: 1px solid white;}
+.top1-mid{width: 230px;margin-left: 50px;}
+.top1-right li{float:left;margin-left: 22px;}
+.top1-right span{display: inline-block;width:12px;height:12px;vertical-align: middle;margin:-2px 6px 0 0}
+.top1-right .my-sephora{background: url(https://www.sephora.cn/soa/bundle/my-sephora.png);}
+.top1-right .vip{background: url(https://www.sephora.cn/soa/bundle/vip-club.png);}
+.top1-right .phone{background: url(https://www.sephora.cn/soa/bundle/mobile-sephora.png);width: 7px;}
+.top1-right .sanjiao{width:9px ;height: 4px;margin: 0 0 3px 5px;background: url(https://www.sephora.cn/soa/bundle/top_angle_w.png) -3px -16px;}
+
+//搜索栏
+#top2{height: 60px;padding-top:24px ;position: relative;}
+.top2-logo{margin-right:80px ;}
+.top2-logo a{display: block;}
+.top2-logo img{vertical-align: middle;}
+
+.top2-search .search-kuang input{border: 1px solid #959595;width: 540px;height: 34px;line-height: 34px; padding-left:20px;vertical-align: middle;color: #000;font-size: 14px;outline: none;}
+.top2-search .search-kuang span{display: inline-block;width: 90px;height: 34px;background-color: #000;vertical-align: middle;border: 1px solid #000;color:white;font-size: 16px;text-align: center;line-height: 36px;}
+
+.top2-search .search-hotword{padding: 3px 0 0;margin-left: -5px;}
+.search-hotword a{padding: 0 4px;color: #acacac;}
+.search-hotword a:hover{color:#dc002f}
+.search-hotword a:nth-of-type(4){color: #dc002f;}
+
+.top2-cart .cart{width: 188px;height: 34px;border: 1px solid #ddd;line-height: 34px;font-size: 16px;text-align: center;display:block;line-height:34px ;}
+.top2-cart .cart-img{background: url(https://www.sephora.cn/soa/bundle/shopping_bag.png);width: 18px;height: 26px;margin: 0 10px;vertical-align: middle;}
+.top2-cart .cart-num{color:#d1152a ;padding:0 5px}
+.top2-img{position: absolute;right: 0;bottom: -33px;}
+
+// 导航
+#top3{position: relative;z-index: 10;height: 36px;}
+.top3-menu{width: 240px;height: 36px;background: url(https://www.sephora.cn/soa/bundle/classified.png) no-repeat;position: relative;}
+.top3-menu >a{color: white;font-size: 16px;margin-left: 15px;line-height: 36px;}
+
+.menu-list{width: 240px;height: auto;background: #fff;position: relative;}
+// .menu-list .menu-ul{box-shadow: 0 0 10px rgba(0,0,0,.1);}
+
+
+.top3-nav{height: 36px;line-height: 42px;font-size: 16px;}
+.top3-nav .menu-row{overflow: hidden;}
+.top3-nav .menu-row li{float: left;margin-left: 40px;}
+.top3-nav .menu-row li a{display: inline;}
+.top3-nav .menu-row li a:hover{color: #dc002f;}
