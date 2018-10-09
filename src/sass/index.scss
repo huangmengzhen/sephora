@@ -1,3 +1,150 @@
 @charset "utf-8";
 @import "header";
 @import "footer";
+//轮播图
+#slideshow{min-width: 1190px;height: 400px}
+.content{width: 1190px;margin: 0 auto;}
+.slideshow{position: relative;z-index: 1;}
+.slideshow .lunbotu{height: 400px;}
+.slideshow li{position: absolute;z-index: 1;}
+.lunbotu-click{display: inline-block;color: #fff;font-size: 50px;position: absolute;top: 50%;margin-top: -50px;z-index: 100;cursor: pointer;font-weight: 700;left: 0;right: 0;}
+.lunbotu-click>span{margin: 0;width: 40px;height: 100px;background-color: rgba(0,0,0,.1);position: absolute;}
+.lunbotu-click>span:hover{background-color: rgba(0,0,0,.5);}
+.lunbotu-click>span em{width: 15px;height: 30px;display: block;background-image: url(https://www.sephora.cn/soa/bundle/hero_splite_arrow.png);}
+.lunbotu-click .clink-left{background-position: 0 0;left: 240px;}
+.lunbotu-click .clink-left em{background-position: 0 0;margin: 35px 15px 35px 10px;}
+.lunbotu-click .clink-right{background-position: 15px 0;right: 0;}
+.lunbotu-click .clink-right em{background-position: -15px 0;margin: 35px 10px 35px 15px;}
+.click-bot{position: absolute;right: 0;bottom: 0;text-align: center;z-index: 10;left: 240px;}
+.click-bot span {width: 100px;height: 20px;border: 0;background-color: hsla(0,0%,100%,0);border-radius: 0;margin-right: 4px;border-top: 3px solid hsla(0,0%,100%,.4);}
+// 本周特惠
+#weekSpecial{min-width: 1190px;margin-top: 10px;overflow: hidden;}
+.weekSpecial{margin-left: 250px;height: 140px;}
+.weekSpecial .ws-left a{display: block;height: 140px;width: 340px;}
+.weekSpecial .ws-left a img{width: 100%;height: 100%;}
+.weekSpecial .ws-right a{display: block;height: 140px;width: 290px;float: left;margin-left: 10px;}
+//全部品牌
+#allBrands{margin-top: 70px;min-width: 1190px;}
+.brand-title{height: 36px;margin: 10px 0;margin-top: 3px;}
+.title-content{height: 36px;position: relative;}
+.title-bgimg{background: url(https://www.sephora.cn/soa/bundle/sprite_title.png) no-repeat;float: left;width: 387px;height: 36px;background-size: 100%;}
+.brand-title .title-content h2{background-position: -20px -13px;}
+.title-content ul{float: right;height: 36px;position: absolute;right: 0;bottom: -7px}
+.title-content ul li{display: inline-block;height: 36px;cursor: pointer;}
+.title-content li a{font-size: 14px;color: #474747;}
+.brand-title .title-content li a{margin-left: 24px;}
+.brand-title .title-content li a:active{color: #000;font-weight: bolder;}
+
+.brand-body{height: 317px;margin-bottom: 80px;}
+.brand-body .brand-body-left{width: 590px;height: 320px;display: inline;overflow: hidden;position: relative;}
+//小轮播图
+.brand-body-left .slideshow{position: relative;z-index: 1;}
+.brand-body-left .slideshow .lunbotu{height: 320px;position: relative;}
+.brand-body-left .slideshow li{width: 590px;height: 320px;}
+
+.brand-body-left .lunbotu-click>span{width: 26px;height: 80px;}
+.brand-body-left .clink-left{left: 0px;}
+.brand-body-left .lunbotu-click .clink-left em{margin: 25px 5px}
+.brand-body-left .lunbotu-click .clink-right em{background-position: -15px 0;margin: 25px 5px 25px 7px;}
+.brand-body-left .click-bot{left: 0;}
+.brand-body-left .click-bot span {width: 50px;height: 10px;}
+//全部品牌图
+.brand-body-right{width: 600px;height: 320px;position: relative;}
+.brand-body-right ul{opacity: 1;z-index: 10;height: 320px;transition-duration: 1.2s;display: block;position: absolute;widows: 320px;font-size: 0;}
+.brand-body-right ul li{width: 149px;height: 79px;border-right: 1px solid #f5f5f5;border-bottom: 1px solid #f5f5f5;overflow: hidden;position: relative;display:inline-block;background-color: #fff;}
+.brand-body-right ul li a{display: block;width: 144px;height: 60px;margin: 5px auto;}
+//精品推荐
+#sephoraPicks{min-width: 1190px;position: relative;}
+.picks-title{width: 100%;height: 36px;margin: 0;}
+.picks-title .picks-content{height: 36px;}
+.picks-title .title-content h2{background-position: -20px -47px;}
+
+.picks-body{widows: 100%;min-height: 200px;}
+.picks-body-content-list{width: 590px;height: 300px;display: inline-block;background-color: #fff;margin-right: 6px;margin-bottom: 10px;position: relative;}
+.picks-body-content-list a{display: block;}
+.picks-body-content-list a img{width: 100%;height: 100%;}
+.picks-list-product{position: absolute;width: 210px;top: 10px;right: 10px;}
+.picks-list-product li{height: 130px;margin-bottom: 1px;position: relative;background-color: #fff;padding: 10px 0 0 10px;}
+.picks-list-product li:hover img{right:10px}
+.picks-list-product li a{display: block;height: 100%;width: 100%;}
+.picks-list-product li a div{width: 160px;font-size: 14px;line-height: 20px;text-align: left;display: inline-block;}
+.picks-list-product li .picks-list-product-brand{font-weight: bolder;color: #000;}
+.picks-list-product li .picks-list-product-content{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;color: #000;}
+.picks-list-product li .picks-list-product-price{color: #000;margin-top: 5px;}
+.picks-list-product li img{position: absolute;width: 90px;height: 90px;bottom: 0;right: 5px;transition-duration: .3s;transition-timing-function: ease-out;}
+.picks-body-content-list-two{margin-right: 0;}
+// 楼层
+#louceng>div {width: 1190px;margin: 0 auto;margin-top: 80px;}
+//护肤
+.skincare h2{background-position: -20px -78px;}
+.louceng em{margin: 0 12px;color: #dadada;}
+.louceng-body{height: 500px;margin-bottom: 10px;}
+.louceng-body-left{overflow: hidden;position: relative;width: 390px;}
+.louceng-body-left img{width: 100%;height: 100%;}
+.louceng-body-right{width: 800px;height: 500px;border-left: 1px solid #f5f5f5;border-bottom: 1px solid #f5f5f5;box-sizing: border-box;background-color: #fff;font-size: 0;}
+.louceng-body-produce{padding: 15px 10px;padding-right: 0;width:200px;height: 250px;display: inline-block;position: relative;overflow: hidden;border-right: 1px solid #f5f5f5;border-top: 1px solid #f5f5f5;box-sizing: border-box;}
+.louceng-body-produce:nth-child(1),.louceng-body-produce:nth-child(5){width: 199px;}
+.louceng-body-produce:hover img{right: 5px;}
+.louceng-body-produce img{position: absolute;width: 180px;height: 180px;right: -5px;bottom: 0;transition-duration: .3s;transition-timing-function: ease-out;z-index: 1;}
+.louceng-body-produce .produce-content{line-height: 18px;display: block;font-size: 14px;color: #000;position: relative;z-index: 10;}
+.louceng-body-produce .louceng-body-produce-brand{font-weight: bolder;}
+.louceng-body-produce .louceng-body-produce-content{line-height: 18px;}
+.louceng-body-produce .louceng-body-produce-price{color: #000;
+    margin-top: 4px;}
+	
+.louceng-foot .louceng-foot-brand{height: 60px;background-color: #fff;display: inline-block;font-size: 0;}
+.louceng-foot-brand li{display: inline-block;height: 56px;overflow: hidden;}
+.louceng-foot-brand li a{float: left;width: 147px;height: 60px;}
+.louceng-foot-brand li img{width: 144px;height: 60px;margin: 0 auto;}
+.louceng-foot-brand li em{float: left;height: 16px;width: 2px;background-color: #b1b1b1;margin: 22px 0 0;}
+
+//彩妆
+.makeup h2{background-position: -20px -113px;}
+//香氛
+.fragrance h2{background-position: -20px -146px;}
+//工具
+.tools h2{background-position: -20px -247px;}
+//男士护肤
+.man h2{background-position: -20px -279px;}
+//洗浴护体
+.body h2{background-position: -20px -179px;}
+//美发护发
+.hair h2{background-position: -20px -212px;}
+//猜你喜欢
+#youlike{min-width: 1190px;margin-top: 80px;}
+.youlike-title{margin: 10px 0;margin-bottom: 3px;}
+.youlike-title h2{background-position: -20px -313px;}
+.youlike-body-content{background-color: #fff;min-height: 300px;border-top: 1px solid #f7f7f7;border-left: 1px solid #f7f7f7;font-size: 0;}
+.youlike-content-list{width: 237px;height: 259px;border-right: 1px solid #f7f7f7;border-bottom: 1px solid #f7f7f7;display: inline-block;}
+.youlike-content-list .youlike-content-list-img{width: 180px;height: 180px;display: block;margin: 0 auto;}
+.youlike-content-list img{width: 180px;height: 180px;}
+.youlike-content-list-brand,.youlike-content-list-content,.youlike-content-list-price{width: 196px;margin: 0 20px;font-size: 14px;line-height: 20px;}
+.youlike-content-list-brand{font-weight: bolder;font-size: 12px;}
+.youlike-content-list-content{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;display: block}
+.youlike-content-list-content:hover{color:#dc002f}
+.youlike-content-list-price{color: #000;margin-top: 6px;}
+
+//左侧楼梯固定
+#fixedL{display: none;position: fixed;top: 70px;left: 19.5px;z-index: 1001;width: 40px;}
+.fixedL-content{background-color: hsla(0,0%,100%,.95);}
+.fixedL-content-list{color: #9d9d9d;cursor: pointer;padding-top: 20px;}
+.fixedL-content-list-content{width: 26px;line-height: 14px;font-size: 12px;display: block;vertical-align: middle;text-align: center;margin: 0 auto;padding-bottom: 20px;}
+.fixedL-content-list:hover .fixedL-content-list-content{color: #e00;}
+.fixedL-content-list.active .fixedL-content-list-content{color: #e00;}
+//右侧固定
+#fixedR{position: fixed;z-index: 1000;right: 0;bottom: 60px;right: 19.5px}
+.fixedR li{height: 40px;}
+.fixedR li a{display: block;height: 40px;}
+.fixedR em{width: 40px;height: 40px;display: block;background-color: #aaa}
+.fixedR .fixedR-content-tx{float: left;display: none;width: 80px;height: 40px;line-height: 40px;text-align: center;color: #fff;}
+.fixedR li:hover .fixedR-content-tx{display: block;background-color: #494949;}
+.fixedR li:hover .fixedR-content-img{background-color: rgba(0,0,0,.7);}
+.fixedR .fixedR-content-img{background-image: url(https://www.sephora.cn/soa/bundle/sprite_toolbar_new.png);float: right;}
+.fixedR .myinfor em{background-position: 0 0;}
+.fixedR .mycart em{background-position: 0 -40px;}
+.fixedR .service em{background-position: 0 -160px;}
+.fixedR .phone em{background-position: 0 -240px;}
+.fixedR .backtop em{background-position: 0 -280px;}
+#fixedT{min-width: 1190px;position: fixed;z-index: 1001;width: 100%;top: -70px;transition-duration: .8s;}
+#fixedT:active{top: 0;}
+.fixedT{height: 40px;padding: 10px 0;}

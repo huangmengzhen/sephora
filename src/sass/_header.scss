@@ -17,10 +17,11 @@
 
 //搜索栏
 #top2{height: 60px;padding-top:24px ;position: relative;}
+//logo图
 .top2-logo{margin-right:80px ;}
 .top2-logo a{display: block;}
 .top2-logo img{vertical-align: middle;}
-
+//中间搜索栏
 .top2-search .search-kuang input{border: 1px solid #959595;width: 540px;height: 34px;line-height: 34px; padding-left:20px;vertical-align: middle;color: #000;font-size: 14px;outline: none;}
 .top2-search .search-kuang span{display: inline-block;width: 90px;height: 34px;background-color: #000;vertical-align: middle;border: 1px solid #000;color:white;font-size: 16px;text-align: center;line-height: 36px;}
 
@@ -28,21 +29,61 @@
 .search-hotword a{padding: 0 4px;color: #acacac;}
 .search-hotword a:hover{color:#dc002f}
 .search-hotword a:nth-of-type(4){color: #dc002f;}
-
-.top2-cart .cart{width: 188px;height: 34px;border: 1px solid #ddd;line-height: 34px;font-size: 16px;text-align: center;display:block;line-height:34px ;}
+//购物袋
+.top2-cart{position: relative;z-index: 10;display: inline;}
+.top2-cart-content{width: 188px;height: 34px;border:1px solid #ddd ;line-height: 34px;font-size: 16px;color: #666;text-align: center;}
+.top2-cart .cart{color:#000}
 .top2-cart .cart-img{background: url(https://www.sephora.cn/soa/bundle/shopping_bag.png);width: 18px;height: 26px;margin: 0 10px;vertical-align: middle;}
 .top2-cart .cart-num{color:#d1152a ;padding:0 5px}
 .top2-img{position: absolute;right: 0;bottom: -33px;}
 
+//购物袋滑动打开详情
+.cart-content{width: 412px;margin-right: 0;border-right: 1px solid #ddd;overflow:hidden;position: absolute;right: 0; float: right;display: none;background: #fff;}
+.cart-content .cart-content-detail{padding-top: 20px;height: 123px;border-left: 1px solid #ddd;border-bottom: 1px solid #ddd;position: relative;}
+.cart-content em{width: 64px;height: 85px;background: url(https://www.sephora.cn/soa/bundle/package.png) no-repeat;position: relative;left: 35px;top: 11px;}
+.cart-content span{font-size: 14px;color: #858585;position: relative;top: -41px;margin-left: 52px;width: 258px;}
+.cart-content a{width: 50px;background: #e00;text-align: center;left: 116px;top: -22px;color: #fff;position: relative;line-height: 22px;font-size: 14px;}
+
+.top2-cart:hover .cart-content{display: inline;}
 // 导航
 #top3{position: relative;z-index: 10;height: 36px;}
+//全部商品类目
 .top3-menu{width: 240px;height: 36px;background: url(https://www.sephora.cn/soa/bundle/classified.png) no-repeat;position: relative;}
 .top3-menu >a{color: white;font-size: 16px;margin-left: 15px;line-height: 36px;}
-
+//菜单列表
 .menu-list{width: 240px;height: auto;background: #fff;position: relative;}
-// .menu-list .menu-ul{box-shadow: 0 0 10px rgba(0,0,0,.1);}
+.menu-list .menu-ul{box-shadow: 0 0 10px rgba(0,0,0,.1);height: 550px;}
+.menu-list .menu-ul >li{padding: 8px 0 8px 15px;display: block;background-color: #fff;line-height: 20px;border-bottom: 1px solid #f5f5f5;position: relative;}
+.menu-list .menu-ul>li:hover{box-shadow: 0 0 5px rgba(0,0,0,.2);z-index: 100;}
+.menu-list .menu-ul >li>a{font-size: 14px;line-height: 22px;margin-right: 10px;font-weight:700;}
+.menu-li-ul>li{display: inline-block;margin-right: 10px;}
+.menu-li-ul>li>a{color: #8a8a8a;margin-right: 0;}
+.menu-li-ul>li>a:hover{color: #e00;}
+.menu-list .heart{width: 55px;height: 55px;background: url(https://www.sephora.cn/soa/bundle/navigation_sprite_wrap.png) no-repeat;position: absolute;}
+.menu-list .heart-left{top: 30px;left: -37px;background-position: 0 5px;background-size: 100%;}
+.menu-list .heart-right{top: 315px;left: 197px;background-position: -29px -100px;z-index: 10;background-size:200% ;}
+//菜单列表滑动后具体内容
+.menu-list-hover{width: 950px;background: #fff;margin-left: 240px;height: 550px;box-shadow: 0 0 5px rgba(0,0,0,.2);padding: 32px 40px 40px 30px;box-sizing: border-box;position: relative;float:left;display: none;}
+.menu-list-hover-content{width: 600px;float: left;}
+.hover-content-title{margin-bottom: 20px;height: 39px;padding-bottom: 17px;overflow: hidden;border-bottom: 1px solid #eee;width: 600px;line-height: 36px;}
+.hover-content-title a{font-size: 18px;line-height: 39px;font-weight: 400px;}
+.hover-content-detail{height: 350px;width: 600px;float: left;overflow: hidden;}
+.hover-content-detail>ul{width: 160px;margin-right: 40px;min-height: 200px;float: left;}
+.hover-content-detail>ul li{margin-bottom: 18px;float: left;}
+.hover-content-detail>ul li>a{color: #000;line-height: 18px;width: 140px;float: left;}
+.hover-content-detail li div{width: 160px;float: left;}
+.hover-content-detail li div a{float: left;margin-right: 12px;color: #8b8b8b;line-height: 22px;}
+.hover-content-detail li div a:hover{color:#e00}
+//最下面品牌logo图
+.hover-content-logo{padding: 0 0 50px;float: left;display: block;}
+.hover-content-logo li{display: inline-block;width: 135px;height: 60px;margin-right: 9px;}
+.hover-content-logo li a{display: inline;}
+.hover-content-logo li img{width: 100%;height: 100%;}
+//右边广告图
+.menu-list-hover-ad{float: right;width: 270px;height: 470px;}
+.menu-list-hover-ad img{width: 100%;height: 100%;}
 
-
+//横向关键字导航
 .top3-nav{height: 36px;line-height: 42px;font-size: 16px;}
 .top3-nav .menu-row{overflow: hidden;}
 .top3-nav .menu-row li{float: left;margin-left: 40px;}

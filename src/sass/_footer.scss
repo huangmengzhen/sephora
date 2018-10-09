@@ -1,0 +1,35 @@
+@charset "utf-8";
+.foot1-content,.foot2-content,.foot3-content{width: 1190px;margin: 0 auto;background: #fff;}
+
+// 底部第一块
+.foot1,.foot2{background-color: #fff;}
+.foot1-content{padding: 30px 0;position: relative;margin-top: 80px;}
+.foot1-content .content-part{width: 236px;height: 96px;margin: 0 auto;padding: 0;margin: 0;float: left;}
+.content-part .content-img{width: 49px;height:49px;margin: 0 auto;display: block;background: url(https://www.sephora.cn/soa/bundle/footer_ico_sprite.png) no-repeat;}
+.content-part .img1{background-position: -137px 0;}
+.content-part .img2{background-position: -90px 0;}
+.content-part .img3{background-position: 0px 0;}
+.content-part .img4{background-position: -180px 0;}
+.content-part .img5{background-position: -47px 0;width: 45px;}
+
+.content-part .content-tx{text-align: center;font-weight: 700;height: 18px;line-height: 18px;margin-top: 14px;display: block;}
+.foot1-content .foot1-suxian{height: 24px;width: 1px;background-color: #9d9d9d;float: left;position: absolute;top:66px}
+//底部第二块
+.foot2-content{padding: 30px 0 50px;border-top: 2px solid #000;background: url(https://www.sephora.cn/soa/bundle/footer_line.png) no-repeat;background-position: right 40px;min-height: 150px;}
+.foot2-content li{display: inline-block;width: 190px;line-height: 24px;vertical-align: top;}
+.foot2-content li a{height: 26px;line-height: 26px;color: #696969;display: block;}
+.foot2-content li a:hover{color: #DC002F;}
+.foot2-content li .head{font-weight:bolder;margin-bottom: 10px;color:#000;}
+
+//底部第三块
+.foot3{background: #000;}
+.foot3-content{padding: 30px 0;text-align: center;background: #000;}
+.foot3 li a{color: #6f6f6f;margin: 0 22px;font-size: 14px;line-height: 21px;}
+.foot3 .foot3-ul-li2 a{margin: 0;}
+.foot3-ul{padding: 0 22px;color: #6f6f6f;vertical-align: middle;display: inline-block;}
+.foot3-ul li{vertical-align: bottom;text-align: center;}
+.foot3-ul li .a-img{background: url(https://www.sephora.cn/soa/bundle/footer-redords-icon.png) no-repeat;padding-left: 30px;}
+.foot3-ul .foot3-ul-li2 a{display: inline}
+.foot3-content>a {display: inline-block;height: 42px;vertical-align: middle;}
+
+
